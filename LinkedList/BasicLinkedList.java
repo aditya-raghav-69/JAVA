@@ -6,7 +6,9 @@ public class BasicLinkedList {
 
     // Node class representing each element in the linked list
     private class Node {
+
         int data; // Data field
+        // here the node has the datatype Node class means the node is itself a datatype which is class
         Node next; // Reference to the next node
 
         Node(int data) {
@@ -16,6 +18,7 @@ public class BasicLinkedList {
     }
 
     // Method to add a new node to the list
+    
     public void add(int data) {
         Node newNode = new Node(data);
         if (head == null) {
