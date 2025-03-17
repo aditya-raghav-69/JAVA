@@ -25,8 +25,6 @@ public class BasicStack{
         }
        }
 
-       
-
     public static void show() {
         for(int n : stack) {
             System.out.println(n);
@@ -36,46 +34,52 @@ public class BasicStack{
 
     public static void main(String[] args) {
 
-// This is the stack implementation using array in java similar to the stack data structure in c
-while (true) {
-    System.out.println("1. Push");
-    System.out.println("2. Pop");
-    System.out.println("3. Show");
-    System.out.println("4. Exit");
+        // This is the stack implementation using array in java similar to the stack data structure in c
+        Scanner sc = new Scanner(System.in); // Initialize Scanner to read user input
 
-    Scanner sc = new Scanner(System.in);
+        while (true) { // Infinite loop for stack operations
 
-    System.out.println("Enter your choice");
+            System.out.println("1. Push");
+            System.out.println("2. Pop");
+            System.out.println("3. Show");
+            System.out.println("4. Exit");
 
-    int choice = sc.nextInt();
+            System.out.println("Enter your choice");
 
-    switch (choice) {
-        case 1:
-            System.out.println("Enter the element to push");
-            int data = sc.nextInt();
-            push(data);
-            break;
-        case 2:
-            pop();
-            break;
-        case 3:
-            show();
-            break;
-        case 4:
-            System.exit(0);
-            break;
-        default:
-            System.out.println("Invalid choice");
-            
-    }
+            int choice;
+            while (!sc.hasNextInt()) { // Input validation
+                System.out.println("Invalid input. Please enter an integer.");
+                sc.next(); // Clear the invalid input
+            }
+            choice = sc.nextInt();
 
-}
-        
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter the element to push");
+                    int data;
+                    while (!sc.hasNextInt()) { // Input validation
+                        System.out.println("Invalid input. Please enter an integer.");
+                        sc.next(); // Clear the invalid input
+                    }
+                    data = sc.nextInt();
 
+                    push(data);
+                    break;
+                case 2:
+                    pop();
+                    break;
+                case 3:
+                    show();
+                    break;
+                case 4:
+                    sc.close(); // Close the Scanner to free resources
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid choice");
 
+            }
 
-
-
-
+        }
     }
 }
