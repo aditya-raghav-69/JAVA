@@ -58,7 +58,9 @@ public class BasicStack{
                     System.out.println("Enter the element to push");
                     int data;
                     while (!sc.hasNextInt()) { // Input validation
+
                         System.out.println("Invalid input. Please enter an integer.");
+                        
                         sc.next(); // Clear the invalid input
                     }
                     data = sc.nextInt();
