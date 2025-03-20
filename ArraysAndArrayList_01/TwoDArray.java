@@ -1,4 +1,4 @@
-package ArraysAndArrayList;
+package ArraysAndArrayList_01;
 
 
 import java.util.Scanner;
@@ -14,7 +14,8 @@ public static void main(String[] args) {
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
 
-            System.out.println("Enter the element at position " + arr[i][j]);
+            System.out.println("Enter the element at position (" + i + ", " + j + "):");
+
             arr[i][j] = s1.nextInt();
         }
         System.out.println("\n");
