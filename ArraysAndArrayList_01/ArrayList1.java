@@ -43,11 +43,11 @@ public class ArrayList1 {
 
         //mixed arraylist
 
-        ArrayList list3 = new ArrayList();
+        ArrayList<Object> list3 = new ArrayList<>();
 
         list3.add("wakarimasta");
         list3.add(234);
-        list3.add("arigatto goziumus");
+        list3.add("arigatto gozaiumus");
         list3.add(true);
 
         System.out.println(" \n \n here we have the elements of the thrid arraylist with the size:  "+list3.size());
