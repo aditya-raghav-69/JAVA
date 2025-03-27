@@ -3,7 +3,7 @@ package ArraysAndArrayList_01;
 
 
 public class matrixSub {
-    static int[][] matSub(int[][] matrix1, int[][] matrix2) {
+    static void matSub(int[][] matrix1, int[][] matrix2) {
 
         int arr[][] = new int[matrix1.length][matrix1[0].length];
 
@@ -12,18 +12,6 @@ public class matrixSub {
                 arr[i][j]=matrix1[i][j]-matrix2[i][j];
             }
         }
-
-
-        return arr;
-    }
-    public static void main(String[] args) {
-        // two matrices defined for passing to the function
-        int[][] matrix1 = { { 2, 4, 5 }, { 1, 2, 3 } };
-
-        int[][] matrix2 = { { 6, 7, 8 }, { 2, 3, 4 } };
-
-        int arr[][] = matSub(matrix1, matrix2);
-        
         // printing the matrices
         // matrix1
 
@@ -54,6 +42,23 @@ public class matrixSub {
             System.out.println();
         }
         
+
+
+        
     }
+    public static void main(String[] args) {
+        // two matrices defined for passing to the function
+        int[][] matrix1 = { { 2, 4, 5 }, { 1, 2, 3 } };
+
+        int[][] matrix2 = { { 6, 7, 8 }, { 2, 3, 4 } };
+
+        matSub(matrix1, matrix2);
+         
+
+        System.out.println();
+
+        matSub(new int[][]{{21,33,44},{20,22,33}}, new int[][]{{10,20,30},{40,50,60}});
+        
+            }
     
 }
