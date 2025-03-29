@@ -2,7 +2,8 @@ package ArraysAndArrayList_01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-// import java.util.Collections;
+// import java.util.Collections;,
+import java.util.Scanner;
 
 public class MethodsOfArrayList {
 
@@ -59,10 +60,53 @@ public class MethodsOfArrayList {
 
         // and false if the element is not present in the ArrayList
 
+        // Here is the use of indexOf() method to get the index of an element in the ArrayList
+        // The indexOf() method returns the index of the first occurrence of the element in the ArrayList
+        // and -1 if the element is not present in the ArrayList
+
+        int index = listFruits.indexOf("Mango");
+        System.out.println("Index of 'Mango' in the ArrayList: " + index);
+
+        int[] arr = {1, 2, 3, 4, 5};
+        // Here is the use of Arrays.toString() method to convert an array to a string
+        // The Arrays.toString() method returns a string representation of the array
+
+        System.out.println("Array: " + Arrays.toString(arr));
+        // Here is the use of Arrays.sort() method to sort an array
+
+        String[] arr1 = { "Banana", "Apple", "Mango", "Orange", "Grapes" };
+        System.out.println("Original array: " + Arrays.toString(arr1));
         
+        Arrays.sort(arr1);
+        // The Arrays.sort() method sorts the array in ascending order
+        // and the sorted array is printed using the Arrays.toString() method
+        System.out.println("Sorted array: " + Arrays.toString(arr1));
+
+
+
+        // Here we shall enter the elements of the ArrayList using Scanner class
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of elements in the ArrayList: ");
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        System.out.println("Enter the number of elements which you want to add in the ArrayList: ");
+        // If we left an element empty in arraylist then it will be added as null
+        int n = sc.nextInt();
+        System.out.println("Enter the elements of the ArrayList: ");
+        for (int i = 0; i < n; i++) {
+            int element = sc.nextInt();
+            list.add(element);
+        }
+        System.out.println("ArrayList: " + list);
+
+
+
+
 
         
+        sc.close();
 
+        
 
     }
     
