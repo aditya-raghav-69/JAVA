@@ -35,9 +35,7 @@ public class ParseStringToAscii {
         System.out.println("ASCII values using getBytes(): " + Arrays.toString(asciiValues));
         
 
-        String str3 = "Aditya";
-        int asci = (int)str3.charAt(0); // Get the ASCII value of the first character of the string;
-        System.out.println(asci);
+      
     }
     
 }
