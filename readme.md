@@ -10,3 +10,7 @@ One day you will be proud of yourself.
 ## From date march 29/2025 @Shadows Also joined the Team
 
 
+## This Repository has some folders and the folders conatain all the  basic to advance of java including the DSA
+
+
+
