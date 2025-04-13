@@ -9,6 +9,14 @@ public class TwoDSelectionSort {
         selectionSort(array);
         System.out.println("Sorted array:");
         printArray(array);
+        int[][] arr = { { 64, 25, 12, 22, 11 }, { 4, 0, 13, 9, 1 }, { 7, 23, 18, 33, 42 }, { 4, 0, 13, 9, 1 },
+                { 7, 23, 18, 33, 42 } };
+        
+        System.out.println("Original array:");
+        printArray(arr);
+        selectionSort(arr);
+        System.out.println("Sorted array:");
+        printArray(arr);
     }
 
     public static void selectionSort(int[][] array) {
